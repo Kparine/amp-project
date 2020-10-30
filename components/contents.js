@@ -120,7 +120,7 @@ const Contents = () => {
 					background-color: #F8F9FA;
 					padding: 5px;
 					font-size: 95%;
-					max-width: 300px;
+					width: 300px;
 				}
 
 				#off {

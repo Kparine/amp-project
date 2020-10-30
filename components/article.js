@@ -24,14 +24,18 @@ const Article = () => {
 						<sup className="false-link">[5][6][7]</sup> AMP was first announced
 						on October 7, 2015.<sup className="false-link">[8]</sup> After a
 						technical preview period, AMP pages began appearing in Google mobile
-						search results in February 2016.[9][10] AMP was initially criticized
-						for potentially giving further control over the web to Google.
+						search results in February 2016.
+						<sup className="false-link">[9][10]</sup> AMP was initially
+						criticized for potentially giving further control over the web to
+						Google.
 						<sup className="false-link">[11]</sup> The AMP Project announced it
 						would move to an open governance model on September 18, 2018.
 						<sup className="false-link">[12][13]</sup>
 					</p>
-					<InfoBox />
-					<Contents />
+					<div className="info-container">
+						<InfoBox />
+						<Contents />
+					</div>
 					<h1 className="heading">
 						History
 						<span className="header-edit">
@@ -56,7 +60,7 @@ const Article = () => {
 						<span className="false-link"> Twitter</span>,
 						<span className="false-link"> Pinterest</span>,
 						<span className="false-link"> LinkedIn</span> and
-						<span className="false-link">WordPress</span>) were initially
+						<span className="false-link"> WordPress</span>) were initially
 						announced as collaborators in the AMP Project.
 						<sup className="false-link">[14][15]</sup> AMP pages first appeared
 						to web users in February 2016, when Google began to show the AMP
@@ -135,6 +139,12 @@ const Article = () => {
 					}
 					.header-edit {
 						font-size: 0.6em;
+					}
+					.info-container {
+						display: flex;
+						justify-content: space-between;
+						width: 100%;
+						flex-direction: row-reverse;
 					}
 					.bolden {
 						font-weight: bolder;

@@ -29,12 +29,13 @@ const InfoBox = () => {
 					border-spacing: 3px;
 					background-color: #f8f9fa;
 					color: black;
-					margin: 0.5em 0 0.5em 1em;
 					padding: 0.2em;
 					float: right;
 					clear: right;
 					font-size: 88%;
 					line-height: 1.5em;
+					height: 90px;
+
 				}
 				.article-anchor-content {
 					padding: 5px;
