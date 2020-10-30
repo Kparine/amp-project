@@ -1,7 +1,7 @@
 import { useAmp } from "next/amp";
 import Home from "../components/home";
 import Header from "../components/header";
-import ContentAnchors from "../components/contents";
+import Article from "../components/article";
 import SideNavBar from "../components/navbar";
 
 export const config = {
@@ -18,7 +18,7 @@ const Index = () => {
 					<SideNavBar />
 				</div>
 				<div className="article-main">
-					<ContentAnchors />
+					<Article />
 				</div>
 			</div>
 			<style global jsx>
@@ -27,6 +27,10 @@ const Index = () => {
 						min-width: 100%;
 						min-height: 100vh;
 						background-color: #f8f9fa;
+					}
+					.article-main {
+						width: 100%;
+						min-height: 100vh;
 					}
 					.layout-main {
 						display: flex;
@@ -38,6 +42,9 @@ const Index = () => {
 					.false-link:hover {
 						text-decoration: underline;
 						cursor: pointer;
+					}
+					.false-link:visited {
+						color: #0b0080;
 					}
 				`}
 			</style>

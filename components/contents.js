@@ -1,9 +1,9 @@
-const ContentAnchors = () => {
+const Contents = () => {
 	return (
 		<>
 			<div className="article-anchor-container">
 				<div className="article-anchor-content">
-					<div>
+					<div className="content-label">
 						Contents [<span className="false-link">hide</span>]
 					</div>
 					<div>
@@ -113,6 +113,12 @@ const ContentAnchors = () => {
 					background-color: #F8F9FA;
 					padding: 5px;
 					font-size: 95%;
+					max-width: 300px;
+				}
+				.content-label {
+					display: flex;
+					justify-content: center;
+					font-weight: bolder;
 				}
 					.lvl-2 {
 						margin: 0 0 0 2em;
@@ -129,4 +135,4 @@ const ContentAnchors = () => {
 	);
 };
 
-export default ContentAnchors;
+export default Contents;

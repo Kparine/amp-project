@@ -73,8 +73,9 @@ const SideNavBar = () => {
 			</div>
 			<style jsx>{`
 				.sidebar-container {
-					height: 500px;
-					width: 100px;
+					min-height: 100vh;
+					min-width: 200px;
+					margin: 0 20px;
 				}
 				.vector-portal {
 					margin: 0 0.6em 0 0.7em;
@@ -108,6 +109,7 @@ const SideNavBar = () => {
 					font-size: 0.75em;
 					line-height: 1.125em;
 				}
+				@media screen and (min-width: 982px);
 			`}</style>
 		</>
 	);
