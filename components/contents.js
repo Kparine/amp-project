@@ -3,12 +3,12 @@ const Contents = () => {
 		<>
 			<div className="article-anchor-container">
 				<div className="article-anchor-content">
-					<div className="content-label" id="your-target">
+					<div className="content-label" id="target">
 						Contents [
 						<a className="false-link" id="off" href="#">
 							show
 						</a>
-						<a className="false-link" id="on" href="#your-target">
+						<a className="false-link" id="on" href="#target">
 							hide
 						</a>
 						]
@@ -128,19 +128,42 @@ const Contents = () => {
 				}
 
 				.control-me {
-				display: block;
+					display: block;
+					visibility: visible;
+					opacity: 1;
+					animation: fade 1s;
+					opacity: 1;
 				}
 
-				#your-target:target ~ .control-me {
-				display: none;
+				#target:target ~ .control-me {
+					position: absolute;
+					list-style: none;
+					display: none;
+					opacity: 0;
+					visibility: hidden;
+					padding: 10px;
+					background-color: rgba(92, 91, 87, 0.9);
+					-webkit-transition: opacity 600ms, visibility 600ms;
+					transition: opacity 600ms, visibility 600ms;
 				}
 
-				#your-target:target #on {
-				display: none;
+				#target:target #on {
+					display: none;
 				}
 
-				#your-target:target #off {
-				display: block;
+				#target:target #off {
+					display: block;
+					visibility: visible;
+					opacity: 1;
+				}
+
+				@keyframes fade {
+					0% {
+						opacity: 0;
+					}
+					100% {
+						opacity: 1;	
+					}
 				}
 
 				.content-label {
@@ -148,15 +171,18 @@ const Contents = () => {
 					justify-content: center;
 					font-weight: bolder;
 				}
-					.lvl-2 {
-						margin: 0 0 0 2em;
-					}
-					.bullet {
-						color: #000;
-					}
-					.article-anchor-content{
-						font-size 95%;
-					}
+
+				.lvl-2 {
+					margin: 0 0 0 2em;
+				}
+
+				.bullet {
+					color: #000;
+				}
+
+				.article-anchor-content{
+					font-size 95%;
+				}
 				`}
 			</style>
 		</>
