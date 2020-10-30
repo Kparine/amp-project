@@ -1,4 +1,29 @@
+import TestSearch from "./testSearch";
+const sampleAutoData = {
+	items: [
+		{
+			city: "Albany",
+			state: "New York",
+			areaCode: 518,
+			population: 98251,
+		},
+		{
+			city: "Annapolis",
+			state: "Maryland",
+			areaCode: 410,
+			population: 39321,
+		},
+		{
+			city: "Trenton",
+			state: "New Jersey",
+			areaCode: 609,
+			population: 84964,
+		},
+	],
+};
 const Header = () => {
+	console.log("sampleAutoData ******------>>>>>>", sampleAutoData);
+
 	return (
 		<>
 			<div className="header-container">
@@ -25,18 +50,7 @@ const Header = () => {
 							<div className="txt false-link article-tab-inactive">
 								<div className="sub-article-tab-inactive">View History</div>
 							</div>
-							<form
-								className="form"
-								method="GET"
-								action="/documentation/examples/api/submit-form"
-								target="_top"
-							>
-								<input
-									type="search"
-									placeholder="🔍   Search Wikipedia"
-									name="search"
-								/>
-							</form>
+							<TestSearch />
 						</div>
 					</div>
 				</div>

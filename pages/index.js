@@ -1,8 +1,8 @@
 import { useAmp } from "next/amp";
-import Home from "../components/home";
 import Header from "../components/header";
 import Article from "../components/article";
 import SideNavBar from "../components/navbar";
+import Footer from "../components/footer";
 
 export const config = {
 	amp: true,
@@ -16,6 +16,7 @@ const Index = () => {
 			<div>
 				<Header />
 				<Article />
+				<Footer />
 			</div>
 			<style global jsx>
 				{`

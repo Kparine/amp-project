@@ -9,7 +9,7 @@ const Article = () => {
 					<div id="siteSub" className="noprint">
 						From Wikipedia, the free encyclopedia
 					</div>
-					<p>
+					<p className="article-item">
 						<span className="bolden">AMP</span> (originally an acronym for
 						<span className="bolden"> Accelerated Mobile Pages</span>
 						<sup className="false-link">[1]</sup>) is an open source HTML
@@ -50,7 +50,7 @@ const Article = () => {
 							[<span className="false-link">edit</span>]
 						</span>
 					</h2>
-					<p>
+					<p className="article-item">
 						The AMP Project was announced by Google on October 7, 2015,
 						following discussions with its partners in the
 						<span className="false-link"> Digital News Initiative</span> (DNI),
@@ -81,7 +81,7 @@ const Article = () => {
 							[<span className="false-link">edit</span>]
 						</span>
 					</h2>
-					<p>
+					<p className="article-item">
 						In September 2016, Microsoft announced support for AMP in the Bing
 						apps for iOS and Android. <sup className="false-link">[18]</sup> In
 						February 2017, a year after the public launch of AMP, Adobe reported
@@ -115,6 +115,10 @@ const Article = () => {
 					}
 					.article-content {
 						margin: 25px;
+					}
+					.article-item {
+						font-size: calc(1em * 0.875);
+						line-height: 1.6;
 					}
 					#first-heading {
 						margin-bottom: 0.25em;
