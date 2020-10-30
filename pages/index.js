@@ -11,15 +11,11 @@ export const config = {
 const Index = () => {
 	const isAmp = useAmp();
 	return (
-		<div>
-			<Header />
-			<div className="layout-main">
-				<div className="sidebar-main">
-					<SideNavBar />
-				</div>
-				<div className="article-main">
-					<Article />
-				</div>
+		<div className="amp-project-main-container">
+			<SideNavBar />
+			<div>
+				<Header />
+				<Article />
 			</div>
 			<style global jsx>
 				{`
@@ -27,6 +23,9 @@ const Index = () => {
 						min-width: 100%;
 						min-height: 100vh;
 						background-color: #f8f9fa;
+					}
+					.amp-project-main-container {
+						display: flex;
 					}
 					.article-main {
 						width: 100%;

@@ -6,6 +6,9 @@ const Article = () => {
 			<div className="article-container">
 				<div className="article-content">
 					<h1 id="first-heading">Accelerated Mobile Pages</h1>
+					<div id="siteSub" className="noprint">
+						From Wikipedia, the free encyclopedia
+					</div>
 					<p>
 						<span className="bolden">AMP</span> (originally an acronym for
 						<span className="bolden"> Accelerated Mobile Pages</span>
@@ -29,6 +32,71 @@ const Article = () => {
 					</p>
 					<InfoBox />
 					<Contents />
+					<h1 className="heading">
+						History
+						<span className="header-edit">
+							{" "}
+							[<span className="false-link">edit</span>]
+						</span>
+					</h1>
+					<h2 className="sub-heading">
+						Announcement and launch{" "}
+						<span className="header-edit">
+							{" "}
+							[<span className="false-link">edit</span>]
+						</span>
+					</h2>
+					<p>
+						The AMP Project was announced by Google on October 7, 2015,
+						following discussions with its partners in the
+						<span className="false-link"> Digital News Initiative</span> (DNI),
+						and other news publishers and technology companies around the world,
+						about improving the performance of the mobile web. More than 30 news
+						publishers and several technology companies (including
+						<span className="false-link"> Twitter</span>,
+						<span className="false-link"> Pinterest</span>,
+						<span className="false-link"> LinkedIn</span> and
+						<span className="false-link">WordPress</span>) were initially
+						announced as collaborators in the AMP Project.
+						<sup className="false-link">[14][15]</sup> AMP pages first appeared
+						to web users in February 2016, when Google began to show the AMP
+						versions of webpages in mobile search results. Initially links to
+						AMP pages were restricted to a “Top Stories” section of Google's
+						mobile search results; by September 2016 Google started linking to
+						AMP content in the main mobile search results area.
+						<sup className="false-link">[16]</sup> AMP links in Google search
+						are identified with an icon. According to one of the co-founders of
+						the AMP Project, Malte Ubl, AMP was originally called PCU,
+						<sup className="false-link">[17]</sup> which stood for Portable
+						Content Unit.
+					</p>
+					<h2 className="sub-heading">
+						Growth and expansion{" "}
+						<span className="header-edit">
+							{" "}
+							[<span className="false-link">edit</span>]
+						</span>
+					</h2>
+					<p>
+						In September 2016, Microsoft announced support for AMP in the Bing
+						apps for iOS and Android. <sup className="false-link">[18]</sup> In
+						February 2017, a year after the public launch of AMP, Adobe reported
+						AMP pages accounted for 7% of all web traffic for top publishers in
+						the United States.<sup className="false-link">[19]</sup> In May
+						2017, Google reported 900,000 web domains were publishing AMP pages
+						with more than two billion AMP pages published globally.
+						<sup className="false-link">[20]</sup> In June 2017, Twitter started
+						linking to AMP pages from its iOS and Android apps.
+						<sup className="false-link">[21]</sup> In September 2018, Microsoft
+						began rolling out its own Bing AMP viewer and AMP cache.
+						<sup className="false-link">[22]</sup> On December 7, 2018, AMP
+						announced their official WordPress plugin,
+						<sup className="false-link">[23]</sup> which allowed WordPress
+						websites to include AMP-ready pages. As announced by AMP's tech lead
+						Malte at AMP Conf '19, AMP is now just AMP, and does not stand for
+						Accelerated Mobile Pages anymore.
+						<sup className="false-link">[24]</sup>
+					</p>
 				</div>
 			</div>
 			<style jsx>
@@ -48,11 +116,25 @@ const Article = () => {
 						margin-bottom: 0.25em;
 						padding: 0;
 						border-bottom: 1px solid #a2a9b1;
-						font-family: "Linux Libertine", "Georgia", "Times", serif;
 						font-size: 1.8em;
 						font-weight: normal;
 						overflow: visible;
 						line-height: 1.3;
+					}
+					#siteSub {
+						font-size: 92%;
+					}
+					.heading {
+						font-size: 1.5em;
+						font-weight: normal;
+						border-bottom: 1px solid #a2a9b1;
+					}
+					.sub-heading {
+						font-size: 1.2em;
+						font-weight: bold;
+					}
+					.header-edit {
+						font-size: 0.6em;
 					}
 					.bolden {
 						font-weight: bolder;

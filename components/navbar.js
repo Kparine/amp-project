@@ -75,6 +75,7 @@ const SideNavBar = () => {
 				.sidebar-container {
 					min-height: 100vh;
 					min-width: 150px;
+					max-width: 200px;
 					margin: 0 20px;
 				}
 				.vector-portal {
