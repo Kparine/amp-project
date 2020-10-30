@@ -6,7 +6,7 @@ const SideNavBar = () => {
 					<amp-img
 						alt="A view of the sea"
 						src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg"
-						width="100px"
+						width="160px"
 						height="160px"
 						layout="responsive"
 					></amp-img>
@@ -74,7 +74,7 @@ const SideNavBar = () => {
 			<style jsx>{`
 				.sidebar-container {
 					min-height: 100vh;
-					min-width: 200px;
+					min-width: 150px;
 					margin: 0 20px;
 				}
 				.vector-portal {

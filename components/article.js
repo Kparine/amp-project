@@ -1,4 +1,5 @@
 import Contents from "./contents";
+import InfoBox from "./infobox";
 const Article = () => {
 	return (
 		<>
@@ -26,6 +27,7 @@ const Article = () => {
 						would move to an open governance model on September 18, 2018.
 						<sup className="false-link">[12][13]</sup>
 					</p>
+					<InfoBox />
 					<Contents />
 				</div>
 			</div>
