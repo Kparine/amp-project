@@ -13,9 +13,14 @@ const Index = () => {
 	return (
 		<div>
 			<Header />
-			<SideNavBar />
-			<Home />
-			<ContentAnchors />
+			<div className="layout-main">
+				<div className="sidebar-main">
+					<SideNavBar />
+				</div>
+				<div className="article-main">
+					<ContentAnchors />
+				</div>
+			</div>
 			<style global jsx>
 				{`
 					body {
@@ -23,13 +28,16 @@ const Index = () => {
 						min-height: 100vh;
 						background-color: #f8f9fa;
 					}
+					.layout-main {
+						display: flex;
+					}
 					.false-link {
-						color: #155af0;
+						color: #194eb1;
 						font-weight: 300;
 					}
 					.false-link:hover {
-						font-weight: bold;
 						text-decoration: underline;
+						cursor: pointer;
 					}
 				`}
 			</style>
